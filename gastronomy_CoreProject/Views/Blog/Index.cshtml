@@ -1,0 +1,82 @@
+﻿@using EntityLayer.Concrete
+@model List<Blog>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<div class="container">
+    <h3 class="title-big mb-4 pb-2">Blog Sayfası</h3>
+    <div class="row">
+        @foreach(var item in Model)
+        {
+        
+        <div class="col-lg-4 col-md-6 mt-md-5 mt-4column column-img mt-md-0 mt-4" id="zoomIn">
+            <div class="services-gd">
+                <div class="serve-info">
+                    <h3 class="date">@item.BlogCreateDate</h3>
+                    <a href="blog-single.html">
+                        <figure>
+                            <img class="img-responsive" src="@item.BlogImage" alt="blog-image">
+                        </figure>
+   
+                    </a>
+                    <h3>
+                            <a href="/Blog/BlogReadAll/@item.BlogID" class="vv-link">
+                            @item.BlogTitle
+                        </a>
+                        <p class="card-text mb-3">@item.BlogContent.Substring(0,item.BlogContent.Substring(0,130).LastIndexOf(" "))... </p>
+                            <a href="/Blog/BlogReadAll/@item.BlogID" class="btn btn-success read-m" style="color:white;">Devamını Oku</a>
+                    </h3>
+                    <ul class="admin-list">
+                        <li>
+                            <a href="blog-single.html">
+                                <span class="fa fa-user-circle"
+                                      aria-hidden="true"></span>
+                                Admin
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog-single.html">
+                                    <span class="fa fa-map-marker" aria-hidden="true"></span>@item.Category.CategoryName
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog-single.html">
+                                    <span class="fa fa-cutlery"
+                                      aria-hidden="true"></span>Steakhouse
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+    <!-- pagination -->
+    <div class="pagination">
+        <ul>
+            <li>
+                <a href="#none" class="not-allowed" disabled="">
+                    <span class="fa fa-angle-double-left" aria-hidden="true"></span>
+                </a>
+            </li>
+            <li><a class="active" href="#page">1</a></li>
+            <li>
+                <a href="#page">2</a>
+            </li>
+            <li>
+                <a href="#page">3</a>
+            </li>
+            <li>
+                <a href="#page">
+                    <span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- //pagination -->
+</div>
+        </div>
+
+

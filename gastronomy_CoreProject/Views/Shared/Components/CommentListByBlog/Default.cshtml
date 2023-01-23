@@ -1,0 +1,36 @@
+﻿
+@model IEnumerable<EntityLayer.Concrete.Comment>
+
+<section class="w3l-comments-9-main mt-5">
+    
+   
+    <div class="gallery-32">
+        <h3 class="title-main2-blog-single">Yorumlar</h3>
+        
+        <div class="row">
+            @foreach (var item in Model)
+            {
+            <div class="col-md-6">
+                <div class="comment-grid">
+                    <p>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i> 
+                            @item.CommentContent
+                    </p>
+                    <div class="testi-pos mt-3 d-flex align-items-center">
+                                    <img src="~/gastronomytheme1/assets/images/icone-utilisateur-vert.png" alt=""
+                             class="img-responsive rounded-circle mb-3" />
+                        <div class="right-coment">
+                                <h4>@item.CommentUserName</h4>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            }
+        </div>
+        
+    </div>
+   
+</section>

@@ -1,0 +1,12 @@
+﻿
+@model IEnumerable<EntityLayer.Concrete.Category>
+
+                            <ul>
+                                <li class="text-tag">Konumlar:</li>
+                                @foreach(var item in Model)
+                                {
+                                <li class="md-1"><a href="#url">@item.CategoryName</a></li>
+                                
+                                }
+                            </ul>
+                   
