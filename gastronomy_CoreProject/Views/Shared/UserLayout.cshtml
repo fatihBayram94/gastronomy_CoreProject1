@@ -104,10 +104,25 @@
     <div class="inner-banner">
         <section class="w3l-breadcrumb">
             <div class="container">
-                <h4 class="inner-text-title font-weight-bold mb-sm-3 mb-2"></h4>
+                <h4 class="inner-text-title"></h4>
                 <ul class="breadcrumbs-custom-path">
-                    <li><a href="index.html">Ana Sayfa</a></li>
-                    <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span></li>
+                    <a href="https://www.instagram.com/talipbayram">
+                        <button class="btn btn-outline-danger" type="button">
+                            <span> <i class="fa fa-instagram"></i> </span> <span>instagram</span>
+                        </button>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/talipbayram">
+                        <button class="btn btn-outline-success" type="button">
+                            <span><i class="fa fa-linkedin"></i></span> <span>Linkedin</span>
+                        </button>
+                    </a>
+                    <a href="https://twitter.com/bayramtalip">
+                        <button class="btn btn-outline-info" type="button">
+                            <span><i class="fa fa-twitter text-info"></i></span><span class="text-info">Twitter</span>
+                        </button>
+                    </a>
+
                 </ul>
             </div>
         </section>
@@ -124,7 +139,105 @@
     </div>
     <!-- //section divide border style -->
     <!-- footer -->
-    @await Html.PartialAsync("Partial3")
+    @*@await Html.PartialAsync("Partial3")*@
+    <section class="w3l-footer-16">
+        <div class="w3l-footer-16-main">
+            <div class="container">
+                <div class="row footer-p">
+                    <div class="col-lg-4 pr-lg-5">
+                        <a class="logo" href="/Blog/index"><i class="fa fa-cutlery" aria-hidden="true"></i> Leziz Mekanlar</a>
+                        <p class="mt-4">
+                            Gittiğiniz her yerde damak tadınıza göre bulabileceğiniz en leziz mekanlar!
+                        </p>
+                    </div>
+                    <div class="col-lg-4 mt-lg-0 mt-4">
+                        <h3>Sayfalar</h3>
+                        <div class="row">
+                            <div class="col-6 column">
+                                <ul class="footer-gd-16">
+                                    <li>
+                                        <a href="/Blog/index">
+                                            <i class="fa fa-angle-right"
+                                               aria-hidden="true"></i>Ana Sayfa
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/about/index">
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>Hakkımızda
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#services">
+                                            <i class="fa fa-angle-right"
+                                               aria-hidden="true"></i>Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog.html">
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>Bloglar
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">
+                                            <i class="fa fa-angle-right"
+                                               aria-hidden="true"></i>İletişim
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="col-6 column pl-0">
+                                <ul class="footer-gd-16">
+                                    <li>
+                                        <a href="menu.html">
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>Foodies
+                                            Menu
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#privacy">
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>Privacy
+                                            Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#terms">
+                                            <i class="fa fa-angle-right" aria-hidden="true"></i>Terms and
+                                            conditions
+                                        </a>
+                                    </li>
+                                    <li><a href="#faq"><i class="fa fa-angle-right" aria-hidden="true"></i>FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    @await Html.PartialAsync("~/Views/NewsLetter/SubscribeMail.cshtml")
+                </div>
+
+                <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
+                    <div class="columns text-lg-left">
+                        <p class="copy-text">
+                            ©@DateTime.Now.Year Foodies. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="columns-2 mt-md-0 mt-3">
+                        <ul class="social">
+                            <li>
+                                <a href="https://www.instagram.com/talipbayram"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/talipbayram"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/bayramtalip"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- //footer -->
     <!-- Js scripts -->
     <!-- move top -->

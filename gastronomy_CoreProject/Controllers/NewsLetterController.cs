@@ -17,11 +17,11 @@ namespace gastronomy_CoreProject.Controllers
 		}
 
 		[HttpPost]
-		public PartialViewResult SubscribeMail(NewsLetter p)
+		public IActionResult SubscribeMail(NewsLetter p)
 		{
 			p.MailStatus = true;
 			nm.AddNewsLetter(p);
-			return PartialView();
+			return RedirectToAction("Index","Blog");
 		}
 	}
 	

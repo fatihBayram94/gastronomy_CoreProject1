@@ -1,1 +1,19 @@
-﻿<h1>Mail</h1>
+﻿<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<div class="col-lg-4 col-md-7 column mt-lg-0 mt-4">
+    <h3>Haber Bülteni </h3>
+    <div class="end-column">
+        <h3>Buradan üye ol!</h3>
+        <form  action="/Newsletter/SubscribeMail" class="subscribe" method="post">
+            <input type="email" placeholder="Email" required="" name="Mail">
+            <button id="btn1"><span class="fa fa-paper-plane" aria-hidden="true"></span></button>
+        </form>
+        <p>Posta listemize abone olun ve e-posta gelen kutunuzdaki güncellemeleri alın.</p>
+    </div>
+   
+</div>
+ <script>
+        $('#btn1').click(function () {
+            swal("Üyelik Sözleşmesi", "...");
+
+        });
+    </script>
