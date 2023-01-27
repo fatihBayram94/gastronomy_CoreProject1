@@ -24,15 +24,10 @@
     <!--header-->
 
     <header id="site-header" class="fixed-top">
-        
         <div class="container">
-         
-                
-             
-
             <nav class="navbar navbar-expand-lg stroke px-0">
                 <h1>
-                    <a class="navbar-brand" href="/Blog/index">
+                    <a class="navbar-brand" href="/HomePage/index">
                         <i class="fa fa-cutlery" aria-hidden="true"></i> Leziz Mekanlar
                     </a>
                 </h1>
@@ -46,15 +41,15 @@
                     <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
                     <span class="navbar-toggler-icon fa icon-close fa-times"></span>
                 </button>
-                
+
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                     <ul class="navbar-nav mx-lg-auto">
-                @await Html.PartialAsync("Partial1")
+                    <ul class="navbar-nav mx-lg-auto">
+                        @await Html.PartialAsync("Partial1")
                         @await Html.PartialAsync("Partial2")
-                  </ul>
-                   
+                    </ul>
+
                 </div>
-                
+
                 <!-- search button -->
                 <div class="search-right">
                     <a href="#search" title="search"><span class="fa fa-search" aria-hidden="true"></span></a>
@@ -95,39 +90,13 @@
                 <!-- //toggle switch for light and dark theme -->
 
             </nav>
-            
+
         </div>
-        
+
     </header>
     <!--//header-->
     <!-- inner banner -->
-    <div class="inner-banner">
-        <section class="w3l-breadcrumb">
-            <div class="container">
-                <h4 class="inner-text-title ml-5"></h4>
-                <ul class="breadcrumbs-custom-path">
-                    <a href="https://www.instagram.com/talipbayram">
-                        <button class="btn btn-outline-danger" type="button">
-                            <span> <i class="fa fa-instagram"></i> </span> <span>instagram</span>
-                        </button>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/talipbayram">
-                        <button class="btn btn-outline-success" type="button">
-                            <span><i class="fa fa-linkedin"></i></span> <span>Linkedin</span>
-                        </button>
-                    </a>
-                    <a href="https://twitter.com/bayramtalip">
-                        <button class="btn btn-outline-info" type="button">
-                            <span><i class="fa fa-twitter text-info"></i></span><span class="text-info">Twitter</span>
-                        </button>
-                    </a>
-
-                </ul>
-                @*<img src="~/GastronomyTheme1/assets/images/bursa-gastronomi-rehberi.jpg" alt="blog-image">*@
-            </div>
-        </section>
-    </div>
+   
     <!-- //inner banner -->
     <!-- blog section -->
     <section class="w3l-blog-sec py-5">
@@ -151,6 +120,7 @@
                             Gittiğiniz her yerde damak tadınıza göre bulabileceğiniz en leziz mekanlar!
                         </p>
                     </div>
+
                     <div class="col-lg-4 mt-lg-0 mt-4">
                         <h3>Sayfalar</h3>
                         <div class="row">
@@ -173,7 +143,7 @@
                                                aria-hidden="true"></i>Services
                                         </a>
                                     </li>
-                                    
+
 
                                 </ul>
                             </div>
